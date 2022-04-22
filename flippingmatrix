@@ -1,0 +1,10 @@
+def flippingMatrix(matrix):
+    m = matrix
+    n = len(matrix)//2
+    size = 2*n
+    suma = 0
+    for i in range(n):
+        for j in range(n):
+            elms = [m[i][j], m[i][size-1-j], m[size-1-i][j], m[size-1-i][size-1-j]]
+            suma += max(elms)
+    return suma
