@@ -1,0 +1,7 @@
+def superDigit(n, k):
+    if len(str(n)) == 1 and k == 1:
+        return n
+    sum_1 = str(n)
+    while len(sum_1) > 1:
+        sum_1 = str(sum(int(i) for i in sum_1)*int(k))
+    return sum_1
