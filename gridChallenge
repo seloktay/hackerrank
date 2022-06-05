@@ -1,0 +1,17 @@
+def gridChallenge(grid):
+    no = len(grid)
+    no2 = len(grid[0])
+    for i in range(no):
+        mylst = list(grid[i])
+        mylst.sort()
+        str1 = ''.join(str(e) for e in mylst)
+        grid[i] = str1
+    
+    for i in range(no2):
+        new = []
+        for j in range(no):
+            new.append(grid[j][i])
+        new2 = sorted(new)
+        if new != new2:
+            return "NO"
+    return "YES"
