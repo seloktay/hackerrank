@@ -5,8 +5,8 @@ def pageCount(n, p):
         return 0
     else:
         if n%2 != 0:
-            ds = (start+1)//2
-            de = end//2
+            ds = (start+1)//2 #s as in start
+            de = end//2 #e as in end
         else:
             ds = p//2
             de = (end+1)//2
