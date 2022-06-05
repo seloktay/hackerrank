@@ -1,0 +1,13 @@
+def pageCount(n, p):
+    start = p-1
+    end = n-p
+    if p == 1 or p ==n:
+        return 0
+    else:
+        if n%2 != 0:
+            ds = (start+1)//2
+            de = end//2
+        else:
+            ds = p//2
+            de = (end+1)//2
+    return min(ds,de)
