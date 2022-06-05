@@ -1,0 +1,9 @@
+def towerBreakers(n, m):
+    if n == 1 and m != 1:
+        return 1
+    elif m == 1:
+        return 2
+    elif n%2 == 0:
+        return 2
+    else:
+        return 1
